@@ -1,0 +1,25 @@
+{
+    "name": "mcmis/base",
+    "description": "The base package for MCMIS",
+    "type": "mcmis-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farhan Wazir",
+            "email": "farhan.wazir@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework" : "5.2.*",
+        "mcmis/jobs" : "dev-master",
+        "mcmis/exporter" : "dev-master",
+        "mcmis/workflow" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MCMIS\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
