@@ -12,8 +12,8 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework" : "5.2.*",
-        "mcmis/exporter" : "@dev",
-        "mcmis/workflow" : "@dev"
+        "mcmis/exporter" : "0.4.*",
+        "mcmis/workflow" : "0.4.*"
     },
     "autoload": {
         "psr-4": {
