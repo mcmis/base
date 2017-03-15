@@ -15,6 +15,7 @@ class ServiceProvider extends BaseServiceProvider
      * @param $straper
      */
     protected function bootstraper($straper){
+        $straper = $this->getRegistrar($straper);
         (new $straper)->bootstrap($this->app);
     }
 
@@ -45,17 +46,13 @@ class ServiceProvider extends BaseServiceProvider
     }
 
     /**
-     * Set for dynamic getter
+     * Set for dynamic request
      *
      * @param $target
      * @param $value
      * @return mixed
      */
     public function __set($setter, $value){
-        if($setter == 'registrar'){
-            return call_user_func([$this, 'get'.ucfirst($setter)], $value);
-        }
-
         return call_user_func([$this, $setter], $value);
     }
 
