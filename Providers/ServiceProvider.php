@@ -46,12 +46,12 @@ class ServiceProvider extends BaseServiceProvider
      * @param $value
      * @return mixed
      */
-    public function __set($target, $value){
-        if($target == 'registrar'){
-            return call_user_func([$this, 'get'.ucfirst($target)], $value);
+    public function __set($setter, $value){
+        if($setter == 'registrar'){
+            return call_user_func([$this, 'get'.ucfirst($setter)], $value);
         }
 
-        return call_user_func([$this, $target], $value);
+        return call_user_func([$this, $setter], $value);
     }
 
 }
