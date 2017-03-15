@@ -12,13 +12,13 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework" : "5.2.*",
-        "mcmis/exporter" : "dev-master",
-        "mcmis/workflow" : "dev-master"
+        "mcmis/exporter" : "@dev",
+        "mcmis/workflow" : "@dev"
     },
     "autoload": {
         "psr-4": {
             "MCMIS\\": ""
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
