@@ -13,7 +13,11 @@ class McmisServiceProvider extends ServiceProvider
      */
     public function register(){
         foreach ($this->config['csys.dependencies'] as $name)
-            $this->bootstraper = $this->registrar = $name;
+            $this->registerBootraper($this->registrar = $name);
+    }
+
+    public function registerBootraper($bootstraper){
+        $this->bootstraper = $bootstraper;
     }
 
 }

@@ -29,9 +29,14 @@ class ServiceProvider extends BaseServiceProvider
     }
 
     /**
+     * Register service provider.
+     */
+    public function register(){}
+
+    /**
      * container services.
      *
-     * @param  string $key
+     * @param $prop
      * @return mixed
      */
     public function __get($prop)
