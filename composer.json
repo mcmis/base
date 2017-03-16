@@ -12,9 +12,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework" : "5.2.*",
-        "mcmis/foundation" : "@dev",
+        "mcmis/foundation" : "0.5.*",
         "mcmis/workflow" : "0.5.*",
-        "mcmis/exporter" : "0.5.*@dev"
+        "mcmis/exporter" : "0.5.*"
     },
     "autoload": {
         "psr-4": {
