@@ -13,8 +13,8 @@
         "php": ">=5.5.9",
         "laravel/framework" : "5.2.*",
         "mcmis/foundation" : "0.4",
-        "mcmis/exporter" : "0.5.*@dev",
-        "mcmis/workflow" : "0.5.*@dev"
+        "mcmis/exporter" : "@dev",
+        "mcmis/workflow" : "@dev"
     },
     "autoload": {
         "psr-4": {
