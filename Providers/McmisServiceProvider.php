@@ -14,6 +14,8 @@ class McmisServiceProvider extends ServiceProvider
     public function register(){
         foreach ($this->config['csys.dependencies'] as $name)
             $this->bootstraper = $name;
+
+        $this->models->load($this->config['models']);
     }
 
 }
