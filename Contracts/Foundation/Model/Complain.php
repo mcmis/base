@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface ComplainContract
+interface Complain
 {
 
     public function user();

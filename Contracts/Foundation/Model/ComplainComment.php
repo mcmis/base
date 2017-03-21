@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface SourceContract
+interface ComplainComment
 {
 
 }

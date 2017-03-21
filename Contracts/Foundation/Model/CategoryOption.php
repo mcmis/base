@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface CategoryOptionContract
+interface CategoryOption
 {
     public function category();
 }

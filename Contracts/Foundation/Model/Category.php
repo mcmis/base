@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface CategoryContract
+interface Category
 {
 
     public function complaints();

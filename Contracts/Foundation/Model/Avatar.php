@@ -3,7 +3,9 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface ComplainPhotoContract
+interface Avatar
 {
+
+    public function users();
 
 }

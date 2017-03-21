@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface ComplainLocationContract
+interface LocationBlock
 {
 
 }

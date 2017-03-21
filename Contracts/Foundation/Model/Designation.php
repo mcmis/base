@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface EmployeeContactContract
+interface Designation
 {
 
 }

@@ -3,7 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface EmployeeContract
+interface LocationPreset
 {
 
 }

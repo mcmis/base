@@ -3,9 +3,7 @@
 namespace MCMIS\Contracts\Foundation\Model;
 
 
-interface AvatarContract
+interface User
 {
-
-    public function users();
 
 }
