@@ -15,7 +15,8 @@
         "mcmis/foundation" : "0.5.*",
         "mcmis/workflow" : "0.5.*",
         "mcmis/exporter" : "0.5.*",
-        "mcmis/jobs" : "0.5.*"
+        "mcmis/jobs" : "0.5.*",
+        "mcmis/support" : "0.5.*"
     },
     "autoload": {
         "files": [
