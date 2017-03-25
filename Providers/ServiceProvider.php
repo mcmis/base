@@ -4,7 +4,7 @@ namespace MCMIS\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends BaseServiceProvider
+abstract class ServiceProvider extends BaseServiceProvider
 {
 
     protected $psr = 'MCMIS';
@@ -32,7 +32,7 @@ class ServiceProvider extends BaseServiceProvider
     /**
      * Register service provider.
      */
-    public function register(){}
+    abstract public function register();
 
     /**
      * container services.
