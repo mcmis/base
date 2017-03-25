@@ -30,11 +30,6 @@ abstract class ServiceProvider extends BaseServiceProvider
     }
 
     /**
-     * Register service provider.
-     */
-    abstract public function register();
-
-    /**
      * container services.
      *
      * @param $prop
