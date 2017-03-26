@@ -9,8 +9,8 @@ class McmisServiceProvider extends ServiceProvider
     protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs'];
 
     public function boot(){
-        if(array_search('Support', $this->bootstrapers)){
-            $this->loadViewsFrom(__DIR__.'../../support/src/Template/layouts', 'layout');
+        if(is_dir($layouts = __DIR__.'/../../support/src/Template/layouts')){
+            $this->loadViewsFrom($layouts, 'layout');
         }
     }
 
