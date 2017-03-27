@@ -6,7 +6,7 @@ namespace MCMIS\Providers;
 class McmisServiceProvider extends ServiceProvider
 {
 
-    protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs'];
+    protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs', 'Plugin\Localizer'];
 
     public function boot(){
         if(is_dir($layouts = __DIR__.'/../../template/src/layout')){
