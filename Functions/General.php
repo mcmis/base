@@ -30,8 +30,8 @@ if (!function_exists('ui_asset')) {
      * @param $path
      * @return mixed|string
      */
-    function ui_asset($path){
-        return route('builtin.template.assets', ['path' => $path]);
+    function ui_asset($path, $secure = null){
+        return sys('url')->route('builtin.template.assets', ['path' => trim($path, '/')]);
     }
 }
 
