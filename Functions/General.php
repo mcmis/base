@@ -22,4 +22,16 @@ if (!function_exists('sys')) {
     }
 }
 
+if (!function_exists('ui_asset')) {
+
+    /**
+     * Get builtin template asset path
+     *
+     * @param $path
+     * @return mixed|string
+     */
+    function ui_asset($path){
+        return route('builtin.template.assets', ['path' => $path]);
+    }
+}
 

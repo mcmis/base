@@ -9,7 +9,7 @@ class McmisServiceProvider extends ServiceProvider
     protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs'];
 
     public function boot(){
-        if(is_dir($layouts = __DIR__.'/../../support/src/Template/layouts')){
+        if(is_dir($layouts = __DIR__.'/../../template/src/layout')){
             $this->loadViewsFrom($layouts, 'layout');
         }
     }
