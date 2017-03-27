@@ -12,11 +12,16 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework" : "5.2.*",
-        "mcmis/foundation" : "0.5.*@dev",
+        "mcmis/foundation" : "0.5.*",
         "mcmis/workflow" : "0.5.*",
-        "mcmis/exporter" : "0.5.*@dev"
+        "mcmis/exporter" : "0.5.*",
+        "mcmis/jobs" : "0.5.*",
+        "mcmis/support" : "0.5.*"
     },
     "autoload": {
+        "files": [
+            "helpers.php"
+        ],
         "psr-4": {
             "MCMIS\\": ""
         }
@@ -25,6 +30,5 @@
         "branch-alias": {
             "dev-master": "0.8.x-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
