@@ -6,13 +6,13 @@ namespace MCMIS\Providers;
 class McmisServiceProvider extends ServiceProvider
 {
 
-    protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs', 'Plugin\Localizer'];
+    protected $bootstrapers = ['Support', 'Foundation', 'Workflow', 'Exporter', 'Jobs', 'Template', 'Plugin\Localizer'];
 
-    public function boot(){
+    /*public function boot(){
         if(is_dir($layouts = __DIR__.'/../../template/src/layout')){
             $this->loadViewsFrom($layouts, 'layout');
         }
-    }
+    }*/
 
     /**
      * Register service provider
