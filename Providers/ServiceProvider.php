@@ -52,9 +52,7 @@ abstract class ServiceProvider extends BaseServiceProvider
     protected function fireOnRegister($object)
     {
         if (method_exists($object, 'onRegister')) {
-            $instance = static::class;
-
-            $object->onRegister($instance);
+            $object->onRegister($this);
         }
     }
 
@@ -66,9 +64,7 @@ abstract class ServiceProvider extends BaseServiceProvider
     protected function fireOnRegistered($object)
     {
         if (method_exists($object, 'onRegistered')) {
-            $instance = static::class;
-
-            $object->onRegistered($instance);
+            $object->onRegistered($this);
         }
     }
 
@@ -90,10 +86,9 @@ abstract class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        $instance = static::class;
 
         foreach ($this->events as $event) {
-            call_user_func($event, [$instance]);
+            call_user_func($event, $this);
         }
 
         unset($this->events);
@@ -120,6 +115,22 @@ abstract class ServiceProvider extends BaseServiceProvider
     public function __set($setter, $value)
     {
         return call_user_func([$this, $setter], $value);
+    }
+
+    /**
+     * Load dynamically protected methods
+     *
+     * @param $method
+     * @param $parameters
+     * @return mixed
+     */
+    public function __call($method, $parameters)
+    {
+        if(method_exists($this, $method) && $method !== 'boot'){
+            return call_user_func_array([$this, $method], $parameters);
+        }
+
+        return parent::__call($method, $parameters);
     }
 
 }
